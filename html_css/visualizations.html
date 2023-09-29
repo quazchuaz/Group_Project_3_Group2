@@ -32,11 +32,20 @@
 
 			<div id="heatMap"></div>
 			<div id="barChart"></div>
-			<div id="lineGraph"></div>
-		
-			
-			
-			
+			<div id="lineGraph"> 
+				<h3> Line Graph </h3>
+				<select name="lineGraphSelect" id="lineGraphSelect">
+					<option value="O3">o3</option>
+					<option value="CO">co</option>
+					<option value="NO">no</option>
+					<option value="NO2">no2</option>
+					<option value="SO2">so2</option>
+					<option value="pm2_5">pm2_5</option>
+					<option value="pm10">pm10</option>
+					<option value="nh3">nh3</option>
+				</select>
+				<div id='lineGraphPlot'></div>
+			</div>
 		
 		<!-- Placed at the end of the document so the pages load faster -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
@@ -46,6 +55,7 @@
 		<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 		<script src="./static/js/app.js"></script>
 		<script src="./static/js/bonus.js"></script>
+		<script src="./line_graph.js"></script>
 
 	</body>
 </html>

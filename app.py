@@ -31,7 +31,7 @@ quality = Base.classes.quality
 # Flask Setup
 #################################################
 app = Flask(__name__)
-CORS
+CORS(app)
 
 
 #################################################
