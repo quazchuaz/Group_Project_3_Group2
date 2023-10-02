@@ -31,7 +31,15 @@
 			</div>
 
 			<div id="heatMap"></div>
-			<div id="barChart"></div>
+			<div id="barChart">
+				<h3> Bar Chart </h3>
+				<select name="chartSelect" id="chartSelect">
+					<option value="day">Day</option>
+  					<option value="month">Month</option>
+				</select>
+				<div id='barChartPlot'></div>
+				<div id='pieChartPlot'></div>
+			</div>
 			<div id="lineGraph"> 
 				<h3> Line Graph </h3>
 				<select name="lineGraphSelect" id="lineGraphSelect">
@@ -56,6 +64,7 @@
 		<script src="./static/js/app.js"></script>
 		<script src="./static/js/bonus.js"></script>
 		<script src="./line_graph.js"></script>
+		<script src="./bar_pie_chart.js"></script>
 
 	</body>
 </html>
