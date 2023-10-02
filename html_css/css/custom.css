@@ -50,3 +50,13 @@ footer {
 	margin-right: auto;
 }
 
+.box{
+    position: absolute;
+    top: 0;
+    z-index: 9999;
+    text-align: center;
+    width: 150px;
+    left: 50%;
+    margin-left: -75px; /* half of the width */
+    background-color:red;
+}
