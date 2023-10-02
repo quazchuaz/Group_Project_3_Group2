@@ -33,12 +33,21 @@
 			<div id="heatMap"></div>
 			<div id="barChart">
 				<h3> Bar Chart </h3>
-				<select name="chartSelect" id="chartSelect">
+				<select name="chartScheduleSelect" id="chartScheduleSelect">
 					<option value="day">Day</option>
   					<option value="month">Month</option>
 				</select>
+				<select name="chartSelect" id="chartSelect">
+					<option value="O3">o3</option>
+					<option value="CO">co</option>
+					<option value="NO">no</option>
+					<option value="NO2">no2</option>
+					<option value="SO2">so2</option>
+					<option value="pm2_5">pm2_5</option>
+					<option value="pm10">pm10</option>
+					<option value="nh3">nh3</option>
+				</select>
 				<div id='barChartPlot'></div>
-				<div id='pieChartPlot'></div>
 			</div>
 			<div id="lineGraph"> 
 				<h3> Line Graph </h3>
