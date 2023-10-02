@@ -1,22 +1,31 @@
 let pdata;
-
+let schedule = 'day';
+let pollutant = 'O3';
 // Fetch data from the API endpoint
 fetch('http://127.0.0.1:5000/api/v1.0/airquality_data')
   .then((response) => response.json())
   .then((jsondata) => {
     pdata = jsondata;
-
+    console.log(pdata)
     // Call the function to create the initial chart with 'CO' pollutant and 'day' view by default
-    createChart('CO', 'day');
+    createChart(pollutant, schedule);
   })
   .catch((e) => console.log(e));
 
 const selectPollutant = document.getElementById('chartSelect');
 
-// Event listener for dropdown change
+// Event listener for dropdown change for pollutant
 selectPollutant.addEventListener('change', (event) => {
-  const selectedView = event.target.value;
-  createChart(selectPollutant.value, selectedView);
+    pollutant = selectPollutant.value;
+    createChart(pollutant, schedule);
+});
+
+const selectSchedule = document.getElementById('chartScheduleSelect');
+
+// Event listener for dropdown change for schedule
+selectSchedule.addEventListener('change', (event) => {
+    schedule = selectSchedule.value;
+    createChart(pollutant, schedule);
 });
 
 // Function to group data by month and calculate monthly averages
