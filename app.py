@@ -12,7 +12,7 @@ from flask_cors import CORS
 #################################################
 # Database Setup
 #################################################
-engine = create_engine("sqlite:///Resources/air_quality.db")
+engine = create_engine("sqlite:///Resources/air_quality_final.db")
 
 # reflect an existing database into a new model
 Base = automap_base()

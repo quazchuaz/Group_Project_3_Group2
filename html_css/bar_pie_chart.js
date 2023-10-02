@@ -1,6 +1,7 @@
 let pdata;
 let schedule = 'day';
 let pollutant = 'O3';
+
 // Fetch data from the API endpoint
 fetch('http://127.0.0.1:5000/api/v1.0/airquality_data')
   .then((response) => response.json())
