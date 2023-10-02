@@ -7,6 +7,31 @@
 		<link rel="stylesheet" href="css/bootstrap.min.css"/>
 		<link rel="stylesheet" href="css/bootstrap-theme.min.css"/>
 		<link rel="stylesheet" href="css/custom.css"/>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-timedimension@1.1.1/dist/leaflet.timedimension.control.min.css" />
+		<style>
+            .legend ul{
+                padding: 0; list-style: none;
+            }
+            .legend li{
+                padding: 5px;
+            }
+            .legend li.aqi1{
+                background-color: #00ffbc;
+            }
+            .legend li.aqi2{
+                background-color: #ffff00;
+            }
+            .legend li.aqi3{
+                background-color: #ffb100;
+            }
+			.legend li.aqi4{
+                background-color: #ff7300;
+            }
+            .legend li.aqi5{
+                background-color: #ff0000;
+            }
+        </style>
 	</head>
 
 	<body>
@@ -30,7 +55,14 @@
 				</p>
 			</div>
 
-			<div id="heatMap"></div>
+			<div id="heatMap">
+				<h3> HeatMap</h3>
+				<div class="box"></div>
+				<div id="map" style="height:500px;"></div>
+				<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+				<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/iso8601-js-period@0.2.1/iso8601.min.js"></script>
+				<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/leaflet-timedimension@1.1.1/dist/leaflet.timedimension.min.js"></script>
+			</div>
 			<div id="barChart">
 				<h3> Bar Chart </h3>
 				<select name="chartSelect" id="chartSelect">
@@ -65,6 +97,6 @@
 		<script src="./static/js/bonus.js"></script>
 		<script src="./line_graph.js"></script>
 		<script src="./bar_pie_chart.js"></script>
-
+		<script src="./heatmap_slider.js"></script>
 	</body>
 </html>
