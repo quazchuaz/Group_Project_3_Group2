@@ -50,7 +50,7 @@ footer {
 	margin-right: auto;
 }
 
-.box{
+.heatMap .box{
     position: absolute;
     top: 0;
     z-index: 9999;
@@ -59,4 +59,26 @@ footer {
     left: 50%;
     margin-left: -75px; /* half of the width */
     background-color:red;
+}
+
+.indexLevel ul{
+	padding: 0; list-style: none;
+}
+.indexLevel li{
+	padding: 5px;
+}
+.indexLevel li.aqi1{
+	background-color: #00ffbc;
+}
+.indexLevel li.aqi2{
+	background-color: #ffff00;
+}
+.indexLevel li.aqi3{
+	background-color: #ffb100;
+}
+.indexLevel li.aqi4{
+	background-color: #ff7300;
+}
+.indexLevel li.aqi5{
+	background-color: #ff0000;
 }
